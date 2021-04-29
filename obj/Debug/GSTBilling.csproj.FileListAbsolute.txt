@@ -1,0 +1,11 @@
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\bin\Debug\GSTBilling.exe.config
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\bin\Debug\GSTBilling.exe
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\bin\Debug\GSTBilling.pdb
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.csprojResolveAssemblyReference.cache
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.Properties.Resources.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.csproj.GenerateResource.Cache
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.exe
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.pdb
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.Form1.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmProduct_List.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmProduct_New.resources
