@@ -16,27 +16,57 @@ namespace GSTBilling
         {
             InitializeComponent();
         }
-
         
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Delete Clicked.");
+            if (gvProductData.SelectedRows.Count == 0)
+            {
+                "Please Select Prodct You Want To Delete.".ShowError();
+                return;
+            }
+
+            int id = gvProductData.SelectedRows[0].Cells[gvcId.Name].GetString().ToInt();
+            bool result = ProductImplementation.DeleteById(id);
+            if (result == true)
+            {
+                "Data Deleted.".ShowInformation();
+            }
+            else
+            {
+                "Failed To Delete Data".ShowError();
+            }
+            FillGrid();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Search Clicked.");
+            FillGrid();   
+        }
+
+        public void FillGrid()
+        {
+
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            frmProduct_New productNew = new frmProduct_New();
-            productNew.ShowDialog();
+            frmProduct_New form = new frmProduct_New();
+            form.ShowDialog();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (gvProductData.SelectedRows.Count == 0)
+            {
+                "Please Select Prodct You Want To Edit.".ShowError();
+                return;
+            }
+
+            int id = gvProductData.SelectedRows[0].Cells[gvcId.Name].GetString().ToInt();
+            Product proData = ProductImplementation.FindById(id);
+
+            frmProduct_New form = new frmProduct_New(proData);
+            form.ShowDialog();
         }
     }
 }

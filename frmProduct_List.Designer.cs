@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
@@ -166,8 +166,8 @@
             this.gvProductData.AllowUserToAddRows = false;
             this.gvProductData.AllowUserToDeleteRows = false;
             this.gvProductData.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.gvProductData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.gvProductData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gvProductData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -197,7 +197,6 @@
             this.gvcId.HeaderText = "ID";
             this.gvcId.Name = "gvcId";
             this.gvcId.ReadOnly = true;
-            this.gvcId.Visible = false;
             // 
             // gvcNo
             // 
@@ -208,9 +207,9 @@
             // 
             // gvcEntryDate
             // 
-            dataGridViewCellStyle5.Format = "d";
-            dataGridViewCellStyle5.NullValue = null;
-            this.gvcEntryDate.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.gvcEntryDate.DefaultCellStyle = dataGridViewCellStyle2;
             this.gvcEntryDate.HeaderText = "Entry Date";
             this.gvcEntryDate.Name = "gvcEntryDate";
             this.gvcEntryDate.ReadOnly = true;
@@ -232,10 +231,10 @@
             // 
             // gvcSalesRate
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Format = "N2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.gvcSalesRate.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.gvcSalesRate.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvcSalesRate.HeaderText = "Sales Rate";
             this.gvcSalesRate.Name = "gvcSalesRate";
             this.gvcSalesRate.ReadOnly = true;

@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Essential\enums.cs" />
+    <Compile Include="Essential\OperationResult.cs" />
+    <Compile Include="Extentions\CharExtenstions.cs" />
+    <Compile Include="Extentions\DateTimeExtension.cs" />
+    <Compile Include="Extentions\NumberExtensions.cs" />
+    <Compile Include="Extentions\StringExtenstions.cs" />
+    <Compile Include="Extentions\WinformsExtentions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +71,7 @@
     <Compile Include="frmProduct_New.Designer.cs">
       <DependentUpon>frmProduct_New.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModelImplementation\ProductImplementation.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,9 +106,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ModelImplementation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

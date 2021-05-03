@@ -13,53 +13,99 @@ namespace GSTBilling
     public partial class frmProduct_New : Form
     {
         Product productData;
+        OperationType opertationType;
 
-        public frmProduct_New()
+        public frmProduct_New(Product _productData = null)
         {
             InitializeComponent();
 
-            productData = new Product();
+            productData = _productData;
+            opertationType = OperationType.Edit;
+
+            if (_productData == null)
+            {
+                productData = new Product();
+                opertationType = OperationType.New;
+            }            
         }
 
         private void frmProduct_New_Load(object sender, EventArgs e)
         {
-            if (productData.Id != 0)
+            setAutoSuggestControl();
+
+            if (opertationType == OperationType.Edit)
             {
-                dtpEntryDate.Value = productData.EntryDate;
-                txtCategoryName.Text = productData.CategoryName;
-                txtProductName.Text = productData.ProductName;
-                txtUnit.Text = productData.Unit;
-                txtHsnCode.Text = productData.HsnCode;
-                txtPurchaseRate.Value = (decimal)productData.PurchaseRate;
-                txtSalesRate.Value = (decimal)productData.SalesRate;
-                txtRemarks.Text = productData.Remarks;
-            }            
+                LoadOldData();
+            }
+        }
+
+        public void setAutoSuggestControl()
+        {
+            txtCategoryName.SuggestCustomSource(ProductImplementation.Suggest_ProudctCategory());
+            txtProductName.SuggestCustomSource(ProductImplementation.Suggest_ProudctName());
+        }
+
+        public void LoadOldData()
+        {
+            dtpEntryDate.Value = productData.EntryDate;
+            txtCategoryName.Text = productData.CategoryName;
+            txtProductName.Text = productData.ProductName;
+            txtUnit.Text = productData.Unit;
+            txtHsnCode.Text = productData.HsnCode;
+            txtPurchaseRate.Value = (decimal)productData.PurchaseRate;
+            txtSalesRate.Value = (decimal)productData.SalesRate;
+            txtRemarks.Text = productData.Remarks;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             //  Get Data From Controls
             productData.EntryDate = dtpEntryDate.Value;
-            productData.CategoryName = txtCategoryName.Text.Trim();
-            productData.ProductName = txtProductName.Text.Trim();
-            productData.Unit = txtUnit.Text.Trim();
-            productData.HsnCode = txtHsnCode.Text.Trim();
-            productData.PurchaseRate = (double)txtPurchaseRate.Value;
-            productData.SalesRate = (double)txtSalesRate.Value;
-            productData.Remarks = txtRemarks.Text.Trim();
+            productData.CategoryName = txtCategoryName.GetString();
+            productData.ProductName = txtProductName.GetString();
+            productData.Unit = txtUnit.GetString();
+            productData.HsnCode = txtHsnCode.GetString();
+            productData.PurchaseRate = txtPurchaseRate.GetDouble();
+            productData.SalesRate = txtSalesRate.GetDouble();
+            productData.Remarks = txtRemarks.GetString();
 
-            //  Validation
-            
+            //  Save
+            var resultValidation = productData.Save();
+            if (resultValidation.IsValid == false)
+            {
+                resultValidation.getError().ShowError();
+                return;
+            }
 
-            //  Data Save
-
-            MessageBox.Show("Category Name " + productData.CategoryName + ", Product Name : " + productData.ProductName);
+            "Product Saved.".ShowInformation();
             this.Close();
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtProductName_Leave(object sender, EventArgs e)
+        {
+            if (txtProductName.GetString().Length == 0)
+            {
+                return;
+            }
+
+            if (ProductImplementation.FindByProductName(txtProductName.GetString(), productData.Id) != null)
+            {
+                "Duplicate Product Name!".ShowInformation();
+                txtProductName.Text = "";
+                txtProductName.Focus();
+            }
+
+        }
+
+        private void frmProduct_New_Enter(object sender, EventArgs e)
+        {
+            NumericUpDown control = sender as NumericUpDown;
+            control.Select(0, control.Text.Length);
         }
     }
 }

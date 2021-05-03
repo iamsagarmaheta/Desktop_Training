@@ -71,6 +71,7 @@
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(401, 33);
             this.txtProductName.TabIndex = 4;
+            this.txtProductName.Leave += new System.EventHandler(this.txtProductName_Leave);
             // 
             // label3
             // 
@@ -187,6 +188,7 @@
             this.txtPurchaseRate.Size = new System.Drawing.Size(203, 33);
             this.txtPurchaseRate.TabIndex = 10;
             this.txtPurchaseRate.ThousandsSeparator = true;
+            this.txtPurchaseRate.Enter += new System.EventHandler(this.frmProduct_New_Enter);
             // 
             // txtSalesRate
             // 
@@ -211,6 +213,7 @@
             this.txtSalesRate.Size = new System.Drawing.Size(203, 33);
             this.txtSalesRate.TabIndex = 12;
             this.txtSalesRate.ThousandsSeparator = true;
+            this.txtSalesRate.Enter += new System.EventHandler(this.frmProduct_New_Enter);
             // 
             // label8
             // 
