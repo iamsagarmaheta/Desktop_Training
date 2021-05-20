@@ -12,7 +12,7 @@ namespace GSTBilling
 {
     public partial class frmProduct_New : Form
     {
-        Product productData;
+        Product productData;        
         OperationType opertationType;
 
         public frmProduct_New(Product _productData = null)
@@ -42,7 +42,7 @@ namespace GSTBilling
         public void setAutoSuggestControl()
         {
             txtCategoryName.SuggestCustomSource(ProductImplementation.Suggest_ProudctCategory());
-            txtProductName.SuggestCustomSource(ProductImplementation.Suggest_ProudctName());
+            txtProductName.SuggestCustomSource(ProductImplementation.Suggest_ProudctName());            
         }
 
         public void LoadOldData()
@@ -59,6 +59,9 @@ namespace GSTBilling
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            "hello".ShowError();
+            "hello".ShowInformation();
+            return;
             //  Get Data From Controls
             productData.EntryDate = dtpEntryDate.Value;
             productData.CategoryName = txtCategoryName.GetString();

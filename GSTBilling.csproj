@@ -71,7 +71,9 @@
     <Compile Include="frmProduct_New.Designer.cs">
       <DependentUpon>frmProduct_New.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModelImplementation\CustomerImplementation.cs" />
     <Compile Include="ModelImplementation\ProductImplementation.cs" />
+    <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -86,7 +86,7 @@ namespace GSTBilling
         //  Data Suggestion Functions
         public static string[] Suggest_ProudctCategory()
         {
-            return new string[4] { "category 1", "category 2", "saree", "groccery" };
+            return new string[4] { "category 1", "category 2", "saree", "groccery" };            
         }
 
         public static string[] Suggest_ProudctName()
