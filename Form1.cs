@@ -22,5 +22,10 @@ namespace GSTBilling
             var productForm = new frmProduct_List();
             productForm.Show();
         }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            new frmCustomer_List().ShowDialog();
+        }
     }
 }

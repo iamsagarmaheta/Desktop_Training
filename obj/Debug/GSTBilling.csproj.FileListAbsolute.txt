@@ -9,3 +9,5 @@ D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.pdb
 D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.Form1.resources
 D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmProduct_List.resources
 D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmProduct_New.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmCustomer_List.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmCustomer_New.resources

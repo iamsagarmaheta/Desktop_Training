@@ -59,9 +59,6 @@ namespace GSTBilling
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            "hello".ShowError();
-            "hello".ShowInformation();
-            return;
             //  Get Data From Controls
             productData.EntryDate = dtpEntryDate.Value;
             productData.CategoryName = txtCategoryName.GetString();

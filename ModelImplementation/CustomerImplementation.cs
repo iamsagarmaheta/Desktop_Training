@@ -27,14 +27,27 @@ namespace GSTBilling
         {
             OperationResult result = new OperationResult(ErrorType.ValidationError);
 
+            if (customer.Id == 0)
+            {
+                customer.Created_Timestamp = DateTime.Now;
+                customer.Created_User = "";
+            }
+            customer.Updated_Timestamp = DateTime.Now;
+            customer.Updated_User = "";
+
             if (customer.CustomerName.Length == 0)
             {
-                result.AddError("Please Enter Valid Customer Name.");                                
+                result.AddError("Please Enter Valid Customer Name.");
             }
-            if (customer.ContactNumber.Length == 0)
+            else if (FindByCustomerName(customer.CustomerName, customer.Id) != null)
+            {
+                result.AddError("Duplicate Customer Name.");
+            }
+            if (customer.ContactPerson.Length == 0)
             {
                 result.AddError("Please Enter Valid Contact Person.");
             }
+            
 
             return result;
         }
@@ -46,9 +59,13 @@ namespace GSTBilling
             return result;
         }
 
-        public static Customer FindByCustomerName(string customerName)
+        public static Customer FindByCustomerName(string customerName, int id = 0)
         {
-            return new Customer();
+            if (customerName == "sagar")
+            {
+                return new Customer();
+            }
+            return null;
         }
 
         public static Customer FindById(int id)
@@ -63,7 +80,7 @@ namespace GSTBilling
 
         public static string[] Suggest_ContactPerson()
         {
-            return new string[1] { "Dummy Customer name" };
+            return new string[3] { "Dummy Contact Person", "person2", "sagar" };
         }
     }
 }
