@@ -18,5 +18,11 @@ namespace GSTBilling
     {
         New = 1,
         Edit = 2
-    }    
+    }
+
+    public enum GstType
+    {
+        LocalGST = 1,
+        IntegratedGST = 2
+    }
 }
