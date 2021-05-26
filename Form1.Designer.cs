@@ -64,6 +64,7 @@
             this.btnBilling.TabIndex = 2;
             this.btnBilling.Text = "Billing";
             this.btnBilling.UseVisualStyleBackColor = true;
+            this.btnBilling.Click += new System.EventHandler(this.btnBilling_Click);
             // 
             // Form1
             // 

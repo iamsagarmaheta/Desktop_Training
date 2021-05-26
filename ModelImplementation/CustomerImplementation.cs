@@ -78,6 +78,11 @@ namespace GSTBilling
             return new string[1] { "Dummy Customer name" };
         }
 
+        public static string[] Suggest_ContactNumber()
+        {
+            return new string[1] { "Dummy Customer name" };
+        }
+
         public static string[] Suggest_ContactPerson()
         {
             return new string[3] { "Dummy Contact Person", "person2", "sagar" };

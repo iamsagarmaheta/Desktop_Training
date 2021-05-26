@@ -27,5 +27,10 @@ namespace GSTBilling
         {
             new frmCustomer_List().ShowDialog();
         }
+
+        private void btnBilling_Click(object sender, EventArgs e)
+        {
+            new frmSales_List().ShowDialog();
+        }
     }
 }

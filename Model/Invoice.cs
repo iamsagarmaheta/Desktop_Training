@@ -12,6 +12,7 @@ namespace GSTBilling
         public Customer CustomerData { get; set; }
         public int CustomerDataId { get; set; }
         public string CustomerName { get { return CustomerData == null ? "" : CustomerData.CustomerName; } }
+        public string ContactNumber { get { return CustomerData == null ? "" : CustomerData.ContactNumber; } }
         public string InvoiceNo { get; set; }
         public DateTime InvoiceDate { get; set; }
         public List<InvoiceDetail> InvoiceDetails { get; set; }
@@ -26,6 +27,7 @@ namespace GSTBilling
         public double CGSTAmount { get { return Gst_Type == GstType.LocalGST ? TaxAmount / 2 : 0; } }
         public double SGSTAmount { get { return Gst_Type == GstType.LocalGST ? TaxAmount / 2 : 0; } }
         public double IGSTAmount { get { return Gst_Type == GstType.IntegratedGST ? TaxAmount : 0; } }
+        public string Remarks { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime Created_Timestamp { get; set; }
         public DateTime Updated_Timestamp { get; set; }

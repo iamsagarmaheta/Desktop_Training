@@ -11,3 +11,5 @@ D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmProduct
 D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmProduct_New.resources
 D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmCustomer_List.resources
 D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmCustomer_New.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmSales_New.resources
+D:\0Practice\C#_Demo\Billing_Software\GSTBilling\obj\Debug\GSTBilling.frmSales_List.resources
