@@ -96,6 +96,7 @@
       <DependentUpon>frmProduct_New.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelImplementation\CustomerImplementation.cs" />
+    <Compile Include="ModelImplementation\InvoiceDetailsImplememtation.cs" />
     <Compile Include="ModelImplementation\ProductImplementation.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Invoice.cs" />

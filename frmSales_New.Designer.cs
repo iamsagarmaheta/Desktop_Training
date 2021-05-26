@@ -138,7 +138,7 @@
             // txtInvoiceNo
             // 
             this.txtInvoiceNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInvoiceNo.Location = new System.Drawing.Point(971, 124);
+            this.txtInvoiceNo.Location = new System.Drawing.Point(983, 124);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
             this.txtInvoiceNo.Size = new System.Drawing.Size(203, 33);
             this.txtInvoiceNo.TabIndex = 6;
@@ -147,7 +147,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(860, 127);
+            this.label2.Location = new System.Drawing.Point(872, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 26);
             this.label2.TabIndex = 11;
@@ -158,7 +158,7 @@
             this.dtpInvoiceDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpInvoiceDate.CustomFormat = "dd-MM-yyyy";
             this.dtpInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpInvoiceDate.Location = new System.Drawing.Point(971, 74);
+            this.dtpInvoiceDate.Location = new System.Drawing.Point(983, 74);
             this.dtpInvoiceDate.Name = "dtpInvoiceDate";
             this.dtpInvoiceDate.Size = new System.Drawing.Size(203, 33);
             this.dtpInvoiceDate.TabIndex = 4;
@@ -167,7 +167,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(842, 79);
+            this.label4.Location = new System.Drawing.Point(854, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 26);
             this.label4.TabIndex = 14;
@@ -183,7 +183,7 @@
             0,
             0,
             0});
-            this.txtSubTotal.Location = new System.Drawing.Point(912, 541);
+            this.txtSubTotal.Location = new System.Drawing.Point(924, 541);
             this.txtSubTotal.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -204,7 +204,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(807, 543);
+            this.label9.Location = new System.Drawing.Point(819, 543);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 26);
             this.label9.TabIndex = 24;
@@ -214,7 +214,7 @@
             // 
             this.btnCancle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancle.Font = new System.Drawing.Font("Open Sans", 14F);
-            this.btnCancle.Location = new System.Drawing.Point(974, 828);
+            this.btnCancle.Location = new System.Drawing.Point(986, 828);
             this.btnCancle.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(138, 46);
@@ -227,7 +227,7 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Open Sans", 14F);
-            this.btnSave.Location = new System.Drawing.Point(824, 828);
+            this.btnSave.Location = new System.Drawing.Point(836, 828);
             this.btnSave.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(138, 46);
@@ -290,7 +290,7 @@
             this.gvSalesData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.gvSalesData.RowTemplate.Height = 40;
             this.gvSalesData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvSalesData.Size = new System.Drawing.Size(1103, 345);
+            this.gvSalesData.Size = new System.Drawing.Size(1115, 345);
             this.gvSalesData.TabIndex = 27000;
             // 
             // gvcId
@@ -459,7 +459,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(812, 582);
+            this.label7.Location = new System.Drawing.Point(824, 582);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 26);
             this.label7.TabIndex = 30;
@@ -475,7 +475,7 @@
             0,
             0,
             0});
-            this.txtDiscount.Location = new System.Drawing.Point(912, 580);
+            this.txtDiscount.Location = new System.Drawing.Point(924, 580);
             this.txtDiscount.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -496,7 +496,7 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(765, 621);
+            this.label8.Location = new System.Drawing.Point(777, 621);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 26);
             this.label8.TabIndex = 32;
@@ -512,7 +512,7 @@
             0,
             0,
             0});
-            this.txtTaxableValue.Location = new System.Drawing.Point(912, 619);
+            this.txtTaxableValue.Location = new System.Drawing.Point(924, 619);
             this.txtTaxableValue.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -533,7 +533,7 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(782, 660);
+            this.label10.Location = new System.Drawing.Point(794, 660);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(121, 26);
             this.label10.TabIndex = 34;
@@ -549,7 +549,7 @@
             0,
             0,
             0});
-            this.txtTaxAmount.Location = new System.Drawing.Point(912, 658);
+            this.txtTaxAmount.Location = new System.Drawing.Point(924, 658);
             this.txtTaxAmount.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -570,7 +570,7 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(799, 699);
+            this.label11.Location = new System.Drawing.Point(811, 699);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(104, 26);
             this.label11.TabIndex = 36;
@@ -585,7 +585,7 @@
             0,
             0,
             0});
-            this.txtRoundOff.Location = new System.Drawing.Point(909, 697);
+            this.txtRoundOff.Location = new System.Drawing.Point(921, 697);
             this.txtRoundOff.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -608,7 +608,7 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Open Sans", 18F);
-            this.label12.Location = new System.Drawing.Point(758, 760);
+            this.label12.Location = new System.Drawing.Point(770, 760);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(145, 33);
             this.label12.TabIndex = 38;
@@ -625,7 +625,7 @@
             0,
             0,
             0});
-            this.txtGrandTotal.Location = new System.Drawing.Point(909, 758);
+            this.txtGrandTotal.Location = new System.Drawing.Point(921, 758);
             this.txtGrandTotal.Maximum = new decimal(new int[] {
             1410065407,
             2,
@@ -796,7 +796,7 @@
             this.btnAddItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddItem.BackgroundImage")));
             this.btnAddItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAddItem.Font = new System.Drawing.Font("Open Sans", 14F);
-            this.btnAddItem.Location = new System.Drawing.Point(1124, 178);
+            this.btnAddItem.Location = new System.Drawing.Point(1136, 178);
             this.btnAddItem.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.Size = new System.Drawing.Size(50, 50);
@@ -809,7 +809,7 @@
             this.btnEditItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditItem.BackgroundImage")));
             this.btnEditItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEditItem.Font = new System.Drawing.Font("Open Sans", 14F);
-            this.btnEditItem.Location = new System.Drawing.Point(1124, 242);
+            this.btnEditItem.Location = new System.Drawing.Point(1136, 242);
             this.btnEditItem.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnEditItem.Name = "btnEditItem";
             this.btnEditItem.Size = new System.Drawing.Size(50, 50);
@@ -822,7 +822,7 @@
             this.btnDeleteItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteItem.BackgroundImage")));
             this.btnDeleteItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnDeleteItem.Font = new System.Drawing.Font("Open Sans", 14F);
-            this.btnDeleteItem.Location = new System.Drawing.Point(1124, 306);
+            this.btnDeleteItem.Location = new System.Drawing.Point(1136, 306);
             this.btnDeleteItem.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnDeleteItem.Name = "btnDeleteItem";
             this.btnDeleteItem.Size = new System.Drawing.Size(50, 50);
