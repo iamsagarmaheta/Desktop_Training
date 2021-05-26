@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSales_New));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,23 +53,6 @@
             this.txtContactNo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.gvSalesData = new System.Windows.Forms.DataGridView();
-            this.gvcId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcInvoiceDataId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcSalesRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcSubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcDiscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcTaxableValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcTaxRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcTaxAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcTotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcIsDeleted = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcCreated_TimeStamp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcUpdatedTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcCreatedUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gvcUpdatedUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDiscount = new System.Windows.Forms.NumericUpDown();
@@ -93,6 +77,25 @@
             this.btnAddItem = new System.Windows.Forms.Button();
             this.btnEditItem = new System.Windows.Forms.Button();
             this.btnDeleteItem = new System.Windows.Forms.Button();
+            this.gvcId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcInvoiceDataId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcSalesRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcSubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcDiscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcTaxableValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcTaxRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcTaxAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcTotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcRemarks = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcIsDeleted = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcCreated_TimeStamp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcUpdatedTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcCreatedUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gvcUpdatedUser = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.txtSubTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvSalesData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiscount)).BeginInit();
@@ -125,6 +128,7 @@
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(403, 33);
             this.txtCustomerName.TabIndex = 0;
+            this.txtCustomerName.Leave += new System.EventHandler(this.txtCustomerName_Leave);
             // 
             // label3
             // 
@@ -138,6 +142,7 @@
             // txtInvoiceNo
             // 
             this.txtInvoiceNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtInvoiceNo.Enabled = false;
             this.txtInvoiceNo.Location = new System.Drawing.Point(983, 124);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
             this.txtInvoiceNo.Size = new System.Drawing.Size(203, 33);
@@ -162,6 +167,7 @@
             this.dtpInvoiceDate.Name = "dtpInvoiceDate";
             this.dtpInvoiceDate.Size = new System.Drawing.Size(203, 33);
             this.dtpInvoiceDate.TabIndex = 4;
+            this.dtpInvoiceDate.ValueChanged += new System.EventHandler(this.dtpInvoiceDate_ValueChanged);
             // 
             // label4
             // 
@@ -213,6 +219,7 @@
             // btnCancle
             // 
             this.btnCancle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancle.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancle.Font = new System.Drawing.Font("Open Sans", 14F);
             this.btnCancle.Location = new System.Drawing.Point(986, 828);
             this.btnCancle.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
@@ -257,8 +264,8 @@
             this.gvSalesData.AllowUserToAddRows = false;
             this.gvSalesData.AllowUserToDeleteRows = false;
             this.gvSalesData.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.gvSalesData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.gvSalesData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.gvSalesData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gvSalesData.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -267,6 +274,7 @@
             this.gvcId,
             this.gvcInvoiceDataId,
             this.gvcProductId,
+            this.gvcNo,
             this.gvcProductName,
             this.gvcQty,
             this.gvcSalesRate,
@@ -276,6 +284,7 @@
             this.gvcTaxRate,
             this.gvcTaxAmount,
             this.gvcTotalAmount,
+            this.gvcRemarks,
             this.gvcIsDeleted,
             this.gvcCreated_TimeStamp,
             this.gvcUpdatedTime,
@@ -292,159 +301,8 @@
             this.gvSalesData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvSalesData.Size = new System.Drawing.Size(1115, 345);
             this.gvSalesData.TabIndex = 27000;
-            // 
-            // gvcId
-            // 
-            this.gvcId.DataPropertyName = "Id";
-            this.gvcId.HeaderText = "ID";
-            this.gvcId.Name = "gvcId";
-            this.gvcId.ReadOnly = true;
-            // 
-            // gvcInvoiceDataId
-            // 
-            this.gvcInvoiceDataId.DataPropertyName = "InvoiceDataId";
-            this.gvcInvoiceDataId.HeaderText = "Invoice Data Id";
-            this.gvcInvoiceDataId.Name = "gvcInvoiceDataId";
-            this.gvcInvoiceDataId.ReadOnly = true;
-            // 
-            // gvcProductId
-            // 
-            this.gvcProductId.DataPropertyName = "ProductDataId";
-            this.gvcProductId.HeaderText = "Product Id";
-            this.gvcProductId.Name = "gvcProductId";
-            this.gvcProductId.ReadOnly = true;
-            // 
-            // gvcProductName
-            // 
-            this.gvcProductName.DataPropertyName = "ProductName";
-            this.gvcProductName.HeaderText = "Product Name";
-            this.gvcProductName.Name = "gvcProductName";
-            this.gvcProductName.ReadOnly = true;
-            this.gvcProductName.Width = 250;
-            // 
-            // gvcQty
-            // 
-            this.gvcQty.DataPropertyName = "Quantity";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.gvcQty.DefaultCellStyle = dataGridViewCellStyle2;
-            this.gvcQty.HeaderText = "Quantity";
-            this.gvcQty.Name = "gvcQty";
-            this.gvcQty.ReadOnly = true;
-            this.gvcQty.Width = 120;
-            // 
-            // gvcSalesRate
-            // 
-            this.gvcSalesRate.DataPropertyName = "SalesRate";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N2";
-            this.gvcSalesRate.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gvcSalesRate.HeaderText = "Sales Rate";
-            this.gvcSalesRate.Name = "gvcSalesRate";
-            this.gvcSalesRate.ReadOnly = true;
-            this.gvcSalesRate.Width = 120;
-            // 
-            // gvcSubTotal
-            // 
-            this.gvcSubTotal.DataPropertyName = "SubTotal";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle4.Format = "N2";
-            this.gvcSubTotal.DefaultCellStyle = dataGridViewCellStyle4;
-            this.gvcSubTotal.HeaderText = "Sub Total";
-            this.gvcSubTotal.Name = "gvcSubTotal";
-            this.gvcSubTotal.ReadOnly = true;
-            this.gvcSubTotal.Width = 150;
-            // 
-            // gvcDiscount
-            // 
-            this.gvcDiscount.DataPropertyName = "Discount";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "N2";
-            this.gvcDiscount.DefaultCellStyle = dataGridViewCellStyle5;
-            this.gvcDiscount.HeaderText = "Discount";
-            this.gvcDiscount.Name = "gvcDiscount";
-            this.gvcDiscount.ReadOnly = true;
-            this.gvcDiscount.Width = 120;
-            // 
-            // gvcTaxableValue
-            // 
-            this.gvcTaxableValue.DataPropertyName = "TaxableValue";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Format = "N2";
-            this.gvcTaxableValue.DefaultCellStyle = dataGridViewCellStyle6;
-            this.gvcTaxableValue.HeaderText = "Taxable Value";
-            this.gvcTaxableValue.Name = "gvcTaxableValue";
-            this.gvcTaxableValue.ReadOnly = true;
-            this.gvcTaxableValue.Width = 120;
-            // 
-            // gvcTaxRate
-            // 
-            this.gvcTaxRate.DataPropertyName = "TaxRate";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "N2";
-            this.gvcTaxRate.DefaultCellStyle = dataGridViewCellStyle7;
-            this.gvcTaxRate.HeaderText = "Tax Rate";
-            this.gvcTaxRate.Name = "gvcTaxRate";
-            this.gvcTaxRate.ReadOnly = true;
-            this.gvcTaxRate.Width = 120;
-            // 
-            // gvcTaxAmount
-            // 
-            this.gvcTaxAmount.DataPropertyName = "TaxAmount";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "N2";
-            this.gvcTaxAmount.DefaultCellStyle = dataGridViewCellStyle8;
-            this.gvcTaxAmount.HeaderText = "Tax Amount";
-            this.gvcTaxAmount.Name = "gvcTaxAmount";
-            this.gvcTaxAmount.ReadOnly = true;
-            this.gvcTaxAmount.Width = 120;
-            // 
-            // gvcTotalAmount
-            // 
-            this.gvcTotalAmount.DataPropertyName = "TotalAmount";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N2";
-            this.gvcTotalAmount.DefaultCellStyle = dataGridViewCellStyle9;
-            this.gvcTotalAmount.HeaderText = "Total Amount";
-            this.gvcTotalAmount.Name = "gvcTotalAmount";
-            this.gvcTotalAmount.ReadOnly = true;
-            this.gvcTotalAmount.Width = 120;
-            // 
-            // gvcIsDeleted
-            // 
-            this.gvcIsDeleted.DataPropertyName = "IsDeleted";
-            this.gvcIsDeleted.HeaderText = "Is Deleted";
-            this.gvcIsDeleted.Name = "gvcIsDeleted";
-            this.gvcIsDeleted.ReadOnly = true;
-            // 
-            // gvcCreated_TimeStamp
-            // 
-            this.gvcCreated_TimeStamp.DataPropertyName = "Created_Timestamp";
-            this.gvcCreated_TimeStamp.HeaderText = "Created Time";
-            this.gvcCreated_TimeStamp.Name = "gvcCreated_TimeStamp";
-            this.gvcCreated_TimeStamp.ReadOnly = true;
-            // 
-            // gvcUpdatedTime
-            // 
-            this.gvcUpdatedTime.DataPropertyName = "Updated_Timestamp";
-            this.gvcUpdatedTime.HeaderText = "Updated Time";
-            this.gvcUpdatedTime.Name = "gvcUpdatedTime";
-            this.gvcUpdatedTime.ReadOnly = true;
-            // 
-            // gvcCreatedUser
-            // 
-            this.gvcCreatedUser.DataPropertyName = "Created_User";
-            this.gvcCreatedUser.HeaderText = "CreatedUser";
-            this.gvcCreatedUser.Name = "gvcCreatedUser";
-            this.gvcCreatedUser.ReadOnly = true;
-            // 
-            // gvcUpdatedUser
-            // 
-            this.gvcUpdatedUser.DataPropertyName = "Updated_User";
-            this.gvcUpdatedUser.HeaderText = "Updated User";
-            this.gvcUpdatedUser.Name = "gvcUpdatedUser";
-            this.gvcUpdatedUser.ReadOnly = true;
+            this.gvSalesData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvSalesData_CellDoubleClick);
+            this.gvSalesData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gvSalesData_DataBindingComplete);
             // 
             // label6
             // 
@@ -570,11 +428,14 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label11.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(811, 699);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(104, 26);
             this.label11.TabIndex = 36;
             this.label11.Text = "Round Off";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtRoundOff
             // 
@@ -602,6 +463,7 @@
             this.txtRoundOff.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtRoundOff.ThousandsSeparator = true;
             this.txtRoundOff.Enter += new System.EventHandler(this.txtRoundOff_Enter);
+            this.txtRoundOff.Leave += new System.EventHandler(this.txtRoundOff_Leave);
             // 
             // label12
             // 
@@ -789,6 +651,7 @@
             this.cmbGstType.Name = "cmbGstType";
             this.cmbGstType.Size = new System.Drawing.Size(203, 34);
             this.cmbGstType.TabIndex = 14;
+            this.cmbGstType.Leave += new System.EventHandler(this.cmbGstType_Leave);
             // 
             // btnAddItem
             // 
@@ -802,6 +665,7 @@
             this.btnAddItem.Size = new System.Drawing.Size(50, 50);
             this.btnAddItem.TabIndex = 8;
             this.btnAddItem.UseVisualStyleBackColor = true;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // btnEditItem
             // 
@@ -815,6 +679,7 @@
             this.btnEditItem.Size = new System.Drawing.Size(50, 50);
             this.btnEditItem.TabIndex = 10;
             this.btnEditItem.UseVisualStyleBackColor = true;
+            this.btnEditItem.Click += new System.EventHandler(this.btnEditItem_Click);
             // 
             // btnDeleteItem
             // 
@@ -828,12 +693,185 @@
             this.btnDeleteItem.Size = new System.Drawing.Size(50, 50);
             this.btnDeleteItem.TabIndex = 12;
             this.btnDeleteItem.UseVisualStyleBackColor = true;
+            this.btnDeleteItem.Click += new System.EventHandler(this.btnDeleteItem_Click);
+            // 
+            // gvcId
+            // 
+            this.gvcId.DataPropertyName = "Id";
+            this.gvcId.HeaderText = "ID";
+            this.gvcId.Name = "gvcId";
+            this.gvcId.ReadOnly = true;
+            // 
+            // gvcInvoiceDataId
+            // 
+            this.gvcInvoiceDataId.DataPropertyName = "InvoiceDataId";
+            this.gvcInvoiceDataId.HeaderText = "Invoice Data Id";
+            this.gvcInvoiceDataId.Name = "gvcInvoiceDataId";
+            this.gvcInvoiceDataId.ReadOnly = true;
+            // 
+            // gvcProductId
+            // 
+            this.gvcProductId.DataPropertyName = "ProductDataId";
+            this.gvcProductId.HeaderText = "Product Id";
+            this.gvcProductId.Name = "gvcProductId";
+            this.gvcProductId.ReadOnly = true;
+            // 
+            // gvcNo
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Format = "N0";
+            this.gvcNo.DefaultCellStyle = dataGridViewCellStyle12;
+            this.gvcNo.HeaderText = "No";
+            this.gvcNo.Name = "gvcNo";
+            this.gvcNo.ReadOnly = true;
+            this.gvcNo.Width = 50;
+            // 
+            // gvcProductName
+            // 
+            this.gvcProductName.DataPropertyName = "ProductName";
+            this.gvcProductName.HeaderText = "Product Name";
+            this.gvcProductName.Name = "gvcProductName";
+            this.gvcProductName.ReadOnly = true;
+            this.gvcProductName.Width = 250;
+            // 
+            // gvcQty
+            // 
+            this.gvcQty.DataPropertyName = "Quantity";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle13.Format = "N2";
+            dataGridViewCellStyle13.NullValue = null;
+            this.gvcQty.DefaultCellStyle = dataGridViewCellStyle13;
+            this.gvcQty.HeaderText = "Quantity";
+            this.gvcQty.Name = "gvcQty";
+            this.gvcQty.ReadOnly = true;
+            this.gvcQty.Width = 120;
+            // 
+            // gvcSalesRate
+            // 
+            this.gvcSalesRate.DataPropertyName = "SalesRate";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle14.Format = "N2";
+            this.gvcSalesRate.DefaultCellStyle = dataGridViewCellStyle14;
+            this.gvcSalesRate.HeaderText = "Sales Rate";
+            this.gvcSalesRate.Name = "gvcSalesRate";
+            this.gvcSalesRate.ReadOnly = true;
+            this.gvcSalesRate.Width = 120;
+            // 
+            // gvcSubTotal
+            // 
+            this.gvcSubTotal.DataPropertyName = "SubTotal";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle15.Format = "N2";
+            this.gvcSubTotal.DefaultCellStyle = dataGridViewCellStyle15;
+            this.gvcSubTotal.HeaderText = "Sub Total";
+            this.gvcSubTotal.Name = "gvcSubTotal";
+            this.gvcSubTotal.ReadOnly = true;
+            this.gvcSubTotal.Width = 150;
+            // 
+            // gvcDiscount
+            // 
+            this.gvcDiscount.DataPropertyName = "Discount";
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Format = "N2";
+            this.gvcDiscount.DefaultCellStyle = dataGridViewCellStyle16;
+            this.gvcDiscount.HeaderText = "Discount";
+            this.gvcDiscount.Name = "gvcDiscount";
+            this.gvcDiscount.ReadOnly = true;
+            this.gvcDiscount.Width = 120;
+            // 
+            // gvcTaxableValue
+            // 
+            this.gvcTaxableValue.DataPropertyName = "TaxableValue";
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Format = "N2";
+            this.gvcTaxableValue.DefaultCellStyle = dataGridViewCellStyle17;
+            this.gvcTaxableValue.HeaderText = "Taxable Value";
+            this.gvcTaxableValue.Name = "gvcTaxableValue";
+            this.gvcTaxableValue.ReadOnly = true;
+            this.gvcTaxableValue.Width = 120;
+            // 
+            // gvcTaxRate
+            // 
+            this.gvcTaxRate.DataPropertyName = "TaxRate";
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle18.Format = "N2";
+            this.gvcTaxRate.DefaultCellStyle = dataGridViewCellStyle18;
+            this.gvcTaxRate.HeaderText = "Tax Rate";
+            this.gvcTaxRate.Name = "gvcTaxRate";
+            this.gvcTaxRate.ReadOnly = true;
+            this.gvcTaxRate.Width = 120;
+            // 
+            // gvcTaxAmount
+            // 
+            this.gvcTaxAmount.DataPropertyName = "TaxAmount";
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle19.Format = "N2";
+            this.gvcTaxAmount.DefaultCellStyle = dataGridViewCellStyle19;
+            this.gvcTaxAmount.HeaderText = "Tax Amount";
+            this.gvcTaxAmount.Name = "gvcTaxAmount";
+            this.gvcTaxAmount.ReadOnly = true;
+            this.gvcTaxAmount.Width = 120;
+            // 
+            // gvcTotalAmount
+            // 
+            this.gvcTotalAmount.DataPropertyName = "TotalAmount";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle20.Format = "N2";
+            this.gvcTotalAmount.DefaultCellStyle = dataGridViewCellStyle20;
+            this.gvcTotalAmount.HeaderText = "Total Amount";
+            this.gvcTotalAmount.Name = "gvcTotalAmount";
+            this.gvcTotalAmount.ReadOnly = true;
+            this.gvcTotalAmount.Width = 120;
+            // 
+            // gvcRemarks
+            // 
+            this.gvcRemarks.DataPropertyName = "Remarks";
+            this.gvcRemarks.HeaderText = "Remarks";
+            this.gvcRemarks.Name = "gvcRemarks";
+            this.gvcRemarks.ReadOnly = true;
+            this.gvcRemarks.Width = 500;
+            // 
+            // gvcIsDeleted
+            // 
+            this.gvcIsDeleted.DataPropertyName = "IsDeleted";
+            this.gvcIsDeleted.HeaderText = "Is Deleted";
+            this.gvcIsDeleted.Name = "gvcIsDeleted";
+            this.gvcIsDeleted.ReadOnly = true;
+            // 
+            // gvcCreated_TimeStamp
+            // 
+            this.gvcCreated_TimeStamp.DataPropertyName = "Created_Timestamp";
+            this.gvcCreated_TimeStamp.HeaderText = "Created Time";
+            this.gvcCreated_TimeStamp.Name = "gvcCreated_TimeStamp";
+            this.gvcCreated_TimeStamp.ReadOnly = true;
+            // 
+            // gvcUpdatedTime
+            // 
+            this.gvcUpdatedTime.DataPropertyName = "Updated_Timestamp";
+            this.gvcUpdatedTime.HeaderText = "Updated Time";
+            this.gvcUpdatedTime.Name = "gvcUpdatedTime";
+            this.gvcUpdatedTime.ReadOnly = true;
+            // 
+            // gvcCreatedUser
+            // 
+            this.gvcCreatedUser.DataPropertyName = "Created_User";
+            this.gvcCreatedUser.HeaderText = "CreatedUser";
+            this.gvcCreatedUser.Name = "gvcCreatedUser";
+            this.gvcCreatedUser.ReadOnly = true;
+            // 
+            // gvcUpdatedUser
+            // 
+            this.gvcUpdatedUser.DataPropertyName = "Updated_User";
+            this.gvcUpdatedUser.HeaderText = "Updated User";
+            this.gvcUpdatedUser.Name = "gvcUpdatedUser";
+            this.gvcUpdatedUser.ReadOnly = true;
             // 
             // frmSales_New
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.CancelButton = this.btnCancle;
             this.ClientSize = new System.Drawing.Size(1218, 661);
             this.Controls.Add(this.btnDeleteItem);
             this.Controls.Add(this.btnEditItem);
@@ -930,9 +968,13 @@
         private System.Windows.Forms.TextBox txtRemarks;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cmbGstType;
+        private System.Windows.Forms.Button btnAddItem;
+        private System.Windows.Forms.Button btnEditItem;
+        private System.Windows.Forms.Button btnDeleteItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcId;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcInvoiceDataId;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcProductId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gvcNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcSalesRate;
@@ -942,13 +984,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcTaxRate;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcTaxAmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcTotalAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gvcRemarks;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcIsDeleted;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcCreated_TimeStamp;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcUpdatedTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcCreatedUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn gvcUpdatedUser;
-        private System.Windows.Forms.Button btnAddItem;
-        private System.Windows.Forms.Button btnEditItem;
-        private System.Windows.Forms.Button btnDeleteItem;
     }
 }

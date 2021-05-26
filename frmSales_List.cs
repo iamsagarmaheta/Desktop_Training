@@ -104,5 +104,29 @@ namespace GSTBilling
 
             FillGrid();
         }
+
+        private void frmSales_List_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.N)
+            {
+                btnNew_Click(sender, e);
+                e.SuppressKeyPress = true;
+            }
+            if (e.Control && e.KeyCode == Keys.E)
+            {
+                btnEdit_Click(sender, e);
+                e.SuppressKeyPress = true;
+            }
+            if (e.Control && e.KeyCode == Keys.D)
+            {
+                btnDelete_Click(sender, e);
+                e.SuppressKeyPress = true;
+            }
+            if (e.Control && e.KeyCode == Keys.S)
+            {
+                btnExport_Click(sender, e);
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }

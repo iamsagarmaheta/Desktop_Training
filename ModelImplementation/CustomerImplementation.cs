@@ -61,9 +61,12 @@ namespace GSTBilling
 
         public static Customer FindByCustomerName(string customerName, int id = 0)
         {
-            if (customerName == "sagar")
+            if (customerName.ToLower() == "Sagar".ToLower())
             {
-                return new Customer();
+                return new Customer() {
+                    CustomerName = "Sagar",
+                    ContactNumber = "88800088800"
+                };
             }
             return null;
         }
@@ -75,7 +78,7 @@ namespace GSTBilling
 
         public static string[] Suggest_CustomerName()
         {
-            return new string[1] { "Dummy Customer name" };
+            return new string[1] { "Sagar" };
         }
 
         public static string[] Suggest_ContactNumber()

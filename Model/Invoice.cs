@@ -33,5 +33,10 @@ namespace GSTBilling
         public DateTime Updated_Timestamp { get; set; }
         public string Created_User { get; set; }
         public string Updated_User { get; set; }
+
+        public Invoice()
+        {
+            InvoiceDetails = new List<InvoiceDetail>();
+        }
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtContactPerson = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
@@ -166,8 +166,8 @@
             this.gvCustomerData.AllowUserToAddRows = false;
             this.gvCustomerData.AllowUserToDeleteRows = false;
             this.gvCustomerData.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
-            this.gvCustomerData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
+            this.gvCustomerData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gvCustomerData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -209,9 +209,9 @@
             // 
             // gvcJoinDate
             // 
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            this.gvcJoinDate.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = null;
+            this.gvcJoinDate.DefaultCellStyle = dataGridViewCellStyle5;
             this.gvcJoinDate.HeaderText = "Join Date";
             this.gvcJoinDate.Name = "gvcJoinDate";
             this.gvcJoinDate.ReadOnly = true;
@@ -244,10 +244,10 @@
             // gvcOutstandingBalance
             // 
             this.gvcOutstandingBalance.DataPropertyName = "OutstadningBalance";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.gvcOutstandingBalance.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.gvcOutstandingBalance.DefaultCellStyle = dataGridViewCellStyle6;
             this.gvcOutstandingBalance.HeaderText = "Outstanding Balance";
             this.gvcOutstandingBalance.Name = "gvcOutstandingBalance";
             this.gvcOutstandingBalance.ReadOnly = true;
@@ -271,10 +271,12 @@
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnNew);
             this.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmSales_List";
             this.Text = "frmCustomer_List";
             this.Load += new System.EventHandler(this.frmSales_List_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmSales_List_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.gvCustomerData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

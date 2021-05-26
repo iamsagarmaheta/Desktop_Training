@@ -19,6 +19,14 @@ namespace GSTBilling
             {
                 result.AddError("Please Add Valid Quantity.");
             }
+
+            invoiceDetails.Updated_Timestamp = DateTime.Now;
+            invoiceDetails.Updated_User= "-";
+            if (invoiceDetails.Id == 0)
+            {
+                invoiceDetails.Created_Timestamp = DateTime.Now;
+                invoiceDetails.Created_User = "-";
+            }
             return result;
         }
     }

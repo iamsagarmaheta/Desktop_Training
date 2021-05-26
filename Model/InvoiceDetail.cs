@@ -22,6 +22,7 @@ namespace GSTBilling
         public double TaxRate { get; set; }
         public double TaxAmount { get { return Math.Round(TaxableValue * TaxRate / 100, 2); } }
         public double TotalAmount { get { return Math.Round(TaxableValue + TaxAmount, 2); } }
+        public string Remarks { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime Created_Timestamp { get; set; }
         public DateTime Updated_Timestamp { get; set; }
